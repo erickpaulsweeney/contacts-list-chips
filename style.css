@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.container-all {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background: linear-gradient(to top right, #c5e7fe, #d4ffdd);
+}
+
+.container-main {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    position: absolute;
+    top: 40%;
+    left: inherit;
+    right: inherit;
+}
+
+.input-bar {
+    width: 80%;
+    padding: 15px;
+    border: 2px solid #ba84b9;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.input-bar:focus {
+    outline: 1px solid #ba84b9;
+}
+
+.add-button {
+    width: 20%;
+    background: linear-gradient(to top right, #c5e7fe, #d4ffdd);
+    border: none;
+    border-radius: 5px;
+    height: 36px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+    transition: transform 150ms ease;
+}
+
+.add-button:hover {
+    transform: translateY(3px);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 5px;
+}
+
+.contacts-list {
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    top: 120%;
+    left: 0;
+    right: 0;
+}
+
+.chip {
+    display: flex;
+    min-height: 50px;
+    gap: 8px;
+    background-color: white;
+    min-width: 150px;
+    align-items: center;
+    border-radius: 30px;
+    overflow-wrap: anywhere;
+}
+
+.chip p {
+    font-size: 18px;
+    padding: 8px 0px 8px 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.chip img {
+    max-height: 50px;
+    border-radius: 50%;
+}
+
+.chip button {
+    font-size: 15px;
+    flex-shrink: 0;
+    margin-left: auto;
+    margin-right: 8px;
+    border: none;
+    background-color: transparent;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: gray;
+    cursor: pointer;
+}
+
+.chip button:hover {
+    background-color: red;
+    color: white
+}
